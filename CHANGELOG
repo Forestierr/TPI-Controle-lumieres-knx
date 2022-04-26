@@ -1,0 +1,218 @@
+﻿# Semaine 1
+
+## Lundi 7 mars 2022
+
+Matin:
+
+Création du planning (Planning_TPI_FOR_v1) et répartition du temps pour les différentes activités.
+Planning à jour: Planning_TPI_FOR_v2
+Création du GitLab avec la structure de fichier de l'atelier. GitLab - TPI_Gestion_Lumiere_KNX
+Création des deux pages XWiki: Jounal de travail et Documentation
+
+Après-midi:
+
+J'ai réalisé toutes les installations nécessaires sur mes 3 Raspberry Pi. (OpenCV / GitLab / ...)
+J'ai aussi modifié les paramètres de gunicorn et de nginx sur le Raspberry Pi server pour que les liens vers le nouveau dossier de travaile soit correcte.
+Gunicorn : /etc/systemd/system/lightcontrol.service
+NginX : /etc/nginx/sites-available/lightcontrol
+
+J'ai aussi commencé la programmation, en réalisant la selection des portes.
+Le programme est normalement fonctionnel mais pas complètement commenté.
+
+## Mardi 8 mars 2022
+
+Matin:
+
+J'ai commencé par commenter complètemement le fichier Select_door.py.
+J'ai réalisé un scripte pour la détection des portes grâce au "matching template". Ce code pourra être utile si la caméra bouge de sa position initiale.
+
+J'ai ensuite commencé la détection des personnes. Pour détecter les personnes je réalise une soustraction d'images avec l'algorithme (createBackgroundSubtractorKNN). Mes résultats actuels sont fiables et utilisables mais peuvent être amméliorés.
+
+Après-midi:
+
+Création d'un code plus structuré et documenté (personne_detect.py) et création de la class PersonneDetect.
+J'ai aussi pu réaliser des tests pour le calcul de l'angle de déplacement permettant de savoir la trajectoire de la personne en mouvement.
+
+## Mercredi 9 mars 2022
+
+Matin:
+
+Avec les tests de hier après-midi, j'ai pu créer le code personne_tracking.py et la class PersonneTracking.
+Je peux dès à présent calculer l'angle de déplacement d'un objet en mouvement ou d'une personne.
+Le tracking n'est pas éfficace à 100% mais suffit pour ce projet.
+
+Après-midi:
+
+J'ai connecté les Raspberry Pi sur les serveurs NTP Suisse (ch.pool.ntp.org).
+J'ai réalisé quelques améliorations sur le tracking des personnes.
+J'ai pu remarquer plusieurs problématiques. Premièrement, si deux personnes se trouvent proches, le système ne les différenciera pas. Deuxièmement, je dois encore réaliser un tri des résultats car on trouve des faux positifs dans la détection.
+J'ai aussi décelé plusieurs améliorations possibles au système, comme un positionnement des caméras au-dessus des portes regardant directement le sol. Cela simplifierai la détection et permettrait un comptage précis des personnes.
+
+Après discussion avec monsieur Dupertuis, je vais teminer proprement la détection des personnes et commencer l'interface graphique. Je vais aussi simplifier un peu la détection et s'il me reste du temps à la fin de mon TPI, je reviendrai dessus.
+
+# Semaine 2
+
+## Lundi 14 mars 2022
+
+Matin:
+
+J'ai optimisé le code entry_detect.py en réalisant un tri des informations dans la class info.
+Pour valider la sortie ou l'entrée d'une personne, il faut au minimum trois fois des informations de détection identiques. Cela vient simplement dimminuer le nombre d'erreurs et augmente le pourcentage de correction correcte.
+
+Après-midi:
+
+J'ai terminé l'optimisation du code entry_detect.py. Il est maintenant fonctionelle.
+Il me faudra encore tester les caméras avec la vision nocturne.
+
+J'ai discuté avec monsieur Dupertuis pour clarifier deux points de mon cahier des charges:
+
+Sur le tableau, les cases bleu représentent une extinction automatique (sans prendre en compte les caméras).
+2. L'accès aux settings depuis l'écran tactile doit se faire avec un mot de passe. Mais ce mot de passe doit pouvoir être rentré sans clavier externe.
+
+Pour ce deuxième point, il faudra que l'utilisateur puisse taper le mot de passe sur un clavier visible sur l'écran.
+
+## Mardi 15 mars 2022
+
+Matin:
+
+Pour répondre à la problématique du mot de passe pour l'écran tactile, j'ai créer la page login 2.
+Cette page est uniquement accessible si on se connecte depuis le serveur. Cette page affiche un clavier avec les chiffres de 0 à 9 avec un boutton "effacer" et un boutton "submit".
+Création de la page HTML settings est gestion des authorisations pour l'utilisateur "local" (écran tactil).
+
+Après-midi:
+
+Amélioration de la page settings et ajout des différentes sections.
+
+## Mercredi 16 mars 2022
+
+Matin:
+
+Implémentation de l'heure et de la date manuelle. Pour cela je viens récupérer uniquement le jour de la semaine et la différence de temps entre l'heure réel et l'heure entrée par l'utilisateur. qunad le système récupère l'heure pour l'affciher il reçoit l'heure plus la différence.
+
+J'ai aussi réalisé la réinitialisation du système a minui.
+
+Après-midi:
+
+Sous la section caméras dans la page settings, les champs Online et Offline se mettent à jour automatiquement. Pour le savoir je réalise un "ping" sur l'adresse IP de chaqu'une des caméras. Cette action est réalisée dans la fonction run_job.
+
+J'ai aussi commencé la communication entre caméra et le serveur WEB. La communication se fait grace à une request http envoyée sur une page non accessible par les utilisateurs. Pour reconnaitre une caméra je viens verifier son adresse MAC (après discution avec monsieur Dupertuis) et non son adresse IP.
+
+# Semaine 3
+
+## Lundi 21 mars 2022
+
+Matin:
+
+J'ai commencé l'implémentation de la lecture des tables horaires. J'ai pu ajouter l'extinction automatique et l'allumage automatique des lumières suite à une requetes des caméras.
+Mais un problème de wifi est arrivé est a stoper mon avance. Je vais donc réaliser de la documentation jusqu'au retour du wifi.
+
+Après-midi:
+
+Après rétablisssement de la connection wifi, j'ai pu reprendre et j'ai enfin passer le server sur le Raspberry Pi.
+Je me suis heurté à un problème. Le système n'arrivait pas a executer les commandes Ping et arp.
+
+## Mardi 22 mars 2022
+
+Matin:
+
+Après plus ample vérification j'ai découvert que le problème venait de la configuration de mon serveur gunicron.
+Après cette modification le programme était denouveau fonctionelle.
+J'ai enfin pu tester l'entièreté de mon project.
+J'ai remarquer quelle petit bug qui on été corrigé. 1 la sauvgarde des portes ne se fessait pas dans le bon dossier. 2 l'affichage online/offline des caméras ne fonctionnait pas.
+
+Après quelques testes, j'ai remarquer quon mon project fonctionnait selon mon cahier des charges, mais la détection n'est pas à la hauteur pour les deux portes les plus éloignée des caméras.
+Je vais d'abord essayer de trouver une autre place pour cette caméra.
+
+J'ai marquer plus haut qu'un comptage était possible avec les caméras positionner directement aux dessu des portes, je discuterai de cela avec monsieur Dupertuis demain pour porposer cette amélioration aux vu de mon avance sur le planning.
+
+Après-midi:
+
+Mise à joure de l'entièreté des commantaire dans mes différents codes.
+
+## Mercredi 23 mars 2022
+
+Matin:
+
+Explication détaillée du fonctionnement du système dans ma documentation.
+
+Après-midi:
+
+Explication de la programmation du système aux sein de ma documentation.
+
+# Semaine 4
+
+## Lundi 28 mars 2022
+
+Matin:
+
+J'ai commencer la réalisation de l'amélioration.
+Pour cela j'ai filmer plusieur personne entré et sortir avec la caméra placé au dessu de la porte.
+J'ai pu réutiliser mes code: personne_detect, personne_tracking et entry_detect. Mais j'ai supprimer tous les calcules d'angle et je les ai simplifier.
+La detection marche très bien, il faudra encore la tester en condition réel mais les résultats sont pour le moment excellent.
+
+Après discution avec monsieur Dupertuis, je vais tester cette nouvelle méthode de détection sur deux des trois portes, car pour la porte rouge il faudra réaliser des traveux pour la fixation de la caméra, cela serra réaliser après TPI si la détection et fonctionelle.
+
+Après-midi:
+
+J'ai fixer les deux caméras sur du bois pour leur ajouter du poid et j'ai ensuite réalisé 2 ralonge pour les raccordés.
+Après plusieurs testes concluents, j'ai ajouter un comptage des personnes.
+Pour réaliser un teste plus réel de mon système, je vais le laisser fonctionner et ragarder demain matin si les personnes ont été comptée.
+
+## Mardi 29 mars 2022
+
+Matin:
+
+Le test que j'ai voulu réaliser na pas fonctionner car le programme de la caméra a "freeze" au milieu de la nuit.
+Je pense que le problème vient de la température du raspberry. Après relancement le comptage a bien fonctionné.
+
+Après-midi:
+
+J'ai réaliser le branchement de la deuxième caméra à travers le faux plafond.
+J'ai pu tester le système avec les deux caméras en fonction.
+J'ai aussi ajouter la vérification du comptage avant extinction automatique.
+
+## Mercredi 30 mars 2022
+
+Matin:
+
+J'ai de nouveau laisser les caméras activer toutes la nuit, le même phénomène c'est produit. Après un certain temps les caméras "freez".
+J'ai donc essayer plusieurs modification pour trouver d'où vient le problème.
+Premièrement j'ai afficher la température en temps réel. Au moment du "freez" la température était encore de 80°C et n'avait pas variée depuit longtemps. J'ai ensuite tester de lancer mon programme en "nohup", en arrièrre plan. Sans changement.
+
+Après-midi:
+
+J'ai poursuivi les tests en vérifiant  l'utilisation de la mémoire et du CPU.
+J'ai aussi lancer le programme en mode debug.
+Le programme semble toujour se stoper à la demande de l'image à la caméra.
+Je vais ventiller mon Raspberry Pi est la caméra pour faire descendre la température.
+
+# Semaine 5
+
+## Lundi 4 avril 2022
+
+Matin:
+
+Après tous les testes de la semaines d'ernières, je pense que la température de la caméra devient après une longue periode de temps, trop élevée. Ce qui stope celle ci.
+Pour le tester je vais utiliser un Fluke et un thermocouple pour mesrer sa température.
+Avec une température embiante à 24°C, ma caméra monte en moin d'une heure à 65°C et les LED infrarouge à 70°C. Je vais donc ajouter des dissipateurs thermique et refaire ces mesures.
+
+Après-midi:
+
+Avec les dissipateurs thermique, la température n'augmente pas aux dessu de 60°C environ.
+Je pense que pour la version final, un ventillateur sera à ajouter.
+
+J'ai créer les deux images de mes Raspberry Pi.
+Liens:
+OMVSERVER\formation\TPI\TPI_Forestier_Gestion_Lumiere_KNX, RPi_server.img et RPi_camera.img.
+
+## Mardi 5 avril 2022
+
+Matin:
+
+Finalisation de la documentation.
+
+Après-midi:
+
+Impression des documents et des codes.
+
+Rendu du projet, fin du TPI.
