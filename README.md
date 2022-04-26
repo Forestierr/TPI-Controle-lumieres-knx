@@ -1,20 +1,18 @@
 # TPI_Forestier_Gestion_Lumiere_KNX #
 
-XWiki: [XWiki](https://xwiki.serverelo.org/xwiki/bin/view/Centre%20de%20Formation%20ELO/Travaux-diplome/TPI_Forestier_Gestion_Lumiere_KNX/)
+Wiki: [Wiki](https://github.com/Forestierr/TPI-Controle-lumieres-knx/wiki)
 
-Server: **OMVSERVER\formation\TPI\TPI_Forestier_Gestion_Lumiere_KNX**
-
-Énoncé du travail d'examen: [Énoncé du travail](http://172.16.32.230/Forestier/tpi_forestier_gestion_lumiere_knx/-/blob/main/1_Documentation/Enoncé%20du%20travail%20d'examen.pdf)
+Énoncé du travail d'examen: [Énoncé du travail](https://github.com/Forestierr/TPI-Controle-lumieres-knx/blob/main/1_Documentation/Enoncé%20du%20travail%20d'examen.pdf)
 
 ## Travail avant TPI ##
 
-XWiki: [XWiki](https://xwiki.serverelo.org/xwiki/bin/view/Centre%20de%20Formation%20ELO/Projets/Controle%20des%20lumières%20KNX/)
+Wiki: [Wiki](https://github.com/Forestierr/Controle-lumieres-knx/wiki)
 
-GitLab: [GitLab](http://172.16.32.230/Forestier/controle-des-lumieres-knx)
+GitHub: [GitHub](https://github.com/Forestierr/Controle-lumieres-knx)
 
 # Description du travail d'examen #
 
-![Cahier des charges](http://172.16.32.230/Forestier/tpi_forestier_gestion_lumiere_knx/-/raw/main/1_Documentation/1_XWiki/intitulé%20du%20travail.jpg)
+![Cahier des charges](https://raw.githubusercontent.com/Forestierr/TPI-Controle-lumieres-knx/main/1_Documentation/1_XWiki/intitulé%20du%20travail.jpg)
 
 ---
 
