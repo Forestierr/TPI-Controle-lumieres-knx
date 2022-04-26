@@ -1,0 +1,1696 @@
+2022-03-22 07:53:01,121 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 07:54:01,228 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 07:54:21,902 - DEBUG - starting while loop
+2022-03-22 07:54:21,965 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 07:54:31,001 - DEBUG - :a:a: CompletedProcess(args=['ping', '-c', '1', '172.16.32.129'], returncode=2, stdout=b'', stderr=b'Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]\n            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]\n            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]\n            [-w deadline] [-W timeout] [hop1 ...] destination\nUsage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]\n             [-l preload] [-m mark] [-M pmtudisc_option]\n             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]\n             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]\n             [-W timeout] destination\n')
+2022-03-22 07:54:33,027 - ERROR - Exception on /camera [POST]
+Traceback (most recent call last):
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/pi/tpi_forestier_gestion_lumiere_knx/5_Programmation/server/main.py", line 605, in camera
+    mac_add = getmacadd(ip)
+  File "/home/pi/tpi_forestier_gestion_lumiere_knx/5_Programmation/server/main.py", line 205, in getmacadd
+    file = subprocess.run("arp -a 172.16.32.129")
+  File "/usr/lib/python3.7/subprocess.py", line 472, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.7/subprocess.py", line 775, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.7/subprocess.py", line 1522, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'arp -a 172.16.32.129': 'arp -a 172.16.32.129'
+2022-03-22 07:55:22,049 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 07:56:22,149 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 07:57:22,201 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 07:58:48,907 - DEBUG - starting while loop
+2022-03-22 07:58:49,002 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 07:58:52,548 - DEBUG - :a:a: CompletedProcess(args=['ping', '-c', '1', '172.16.32.129'], returncode=2, stdout=b'', stderr=b'Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]\n            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]\n            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]\n            [-w deadline] [-W timeout] [hop1 ...] destination\nUsage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]\n             [-l preload] [-m mark] [-M pmtudisc_option]\n             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]\n             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]\n             [-W timeout] destination\n')
+2022-03-22 07:58:52,625 - DEBUG - tet : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 07:58:52,630 - DEBUG - $,RPWCSD,009,07:580601,0*
+2022-03-22 07:58:52,632 - INFO - New camera : 172.16.32.129
+2022-03-22 07:59:49,141 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 07:59:49,189 - DEBUG - :a:a: CompletedProcess(args=['ping', '-c', '1', '172.16.32.129'], returncode=2, stdout=b'', stderr=b'Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]\n            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]\n            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]\n            [-w deadline] [-W timeout] [hop1 ...] destination\nUsage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]\n             [-l preload] [-m mark] [-M pmtudisc_option]\n             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]\n             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]\n             [-W timeout] destination\n')
+2022-03-22 08:00:49,285 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 08:00:49,344 - DEBUG - :a:a: CompletedProcess(args=['ping', '-c', '1', '172.16.32.129'], returncode=2, stdout=b'', stderr=b'Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]\n            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]\n            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]\n            [-w deadline] [-W timeout] [hop1 ...] destination\nUsage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]\n             [-l preload] [-m mark] [-M pmtudisc_option]\n             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]\n             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]\n             [-W timeout] destination\n')
+2022-03-22 08:01:49,493 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 08:01:49,547 - DEBUG - :a:a: CompletedProcess(args=['ping', '-c', '1', '172.16.32.129'], returncode=2, stdout=b'', stderr=b'Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]\n            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]\n            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]\n            [-w deadline] [-W timeout] [hop1 ...] destination\nUsage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]\n             [-l preload] [-m mark] [-M pmtudisc_option]\n             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]\n             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]\n             [-W timeout] destination\n')
+2022-03-22 08:02:49,673 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 08:02:49,730 - DEBUG - :a:a: CompletedProcess(args=['ping', '-c', '1', '172.16.32.129'], returncode=2, stdout=b'', stderr=b'Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]\n            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]\n            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]\n            [-w deadline] [-W timeout] [hop1 ...] destination\nUsage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]\n             [-l preload] [-m mark] [-M pmtudisc_option]\n             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]\n             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]\n             [-W timeout] destination\n')
+2022-03-22 08:03:35,217 - DEBUG - starting while loop
+2022-03-22 08:03:35,274 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 08:03:40,329 - ERROR - Exception on /camera [POST]
+Traceback (most recent call last):
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/pi/tpi_forestier_gestion_lumiere_knx/5_Programmation/server/main.py", line 599, in camera
+    mac_add = getmacadd(ip)
+  File "/home/pi/tpi_forestier_gestion_lumiere_knx/5_Programmation/server/main.py", line 201, in getmacadd
+    rep = myping(host)
+  File "/home/pi/tpi_forestier_gestion_lumiere_knx/5_Programmation/server/main.py", line 184, in myping
+    response = str(subprocess.check_output(["ping", "-c", host]))
+  File "/usr/lib/python3.7/subprocess.py", line 395, in check_output
+    **kwargs).stdout
+  File "/usr/lib/python3.7/subprocess.py", line 487, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['ping', '-c', '172.16.32.129']' returned non-zero exit status 2.
+2022-03-22 08:04:37,220 - DEBUG - starting while loop
+2022-03-22 08:04:37,286 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 08:05:28,811 - DEBUG - starting while loop
+2022-03-22 08:05:28,876 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 08:05:33,078 - DEBUG - :a:a: b'PING 172.16.32.129 (172.16.32.129) 56(84) bytes of data.\n64 bytes from 172.16.32.129: icmp_seq=1 ttl=64 time=2.17 ms\n\n--- 172.16.32.129 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.168/2.168/2.168/0.000 ms\n'
+2022-03-22 08:05:33,138 - DEBUG - tet : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 08:05:33,142 - DEBUG - $,RPWCSD,009,08:050601,0*
+2022-03-22 08:05:33,144 - INFO - New camera : 172.16.32.129
+2022-03-22 08:06:28,985 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 08:06:29,037 - DEBUG - :a:a: b'PING 172.16.32.129 (172.16.32.129) 56(84) bytes of data.\n64 bytes from 172.16.32.129: icmp_seq=1 ttl=64 time=3.18 ms\n\n--- 172.16.32.129 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.178/3.178/3.178/0.000 ms\n'
+2022-03-22 08:06:33,192 - DEBUG - :a:a: b'PING 172.16.32.129 (172.16.32.129) 56(84) bytes of data.\n64 bytes from 172.16.32.129: icmp_seq=1 ttl=64 time=2.09 ms\n\n--- 172.16.32.129 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.089/2.089/2.089/0.000 ms\n'
+2022-03-22 08:06:33,248 - DEBUG - tet : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 08:06:33,252 - DEBUG - $,RPWCSD,009,08:060601,0*
+2022-03-22 08:06:33,255 - INFO - Camera modify the light value.
+2022-03-22 08:06:33,256 - INFO - New camera : 172.16.32.129
+2022-03-22 08:07:29,140 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 08:07:29,195 - DEBUG - :a:a: b'PING 172.16.32.129 (172.16.32.129) 56(84) bytes of data.\n64 bytes from 172.16.32.129: icmp_seq=1 ttl=64 time=2.29 ms\n\n--- 172.16.32.129 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.293/2.293/2.293/0.000 ms\n'
+2022-03-22 08:08:29,267 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 08:08:29,327 - DEBUG - :a:a: b'PING 172.16.32.129 (172.16.32.129) 56(84) bytes of data.\n64 bytes from 172.16.32.129: icmp_seq=1 ttl=64 time=2.52 ms\n\n--- 172.16.32.129 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.517/2.517/2.517/0.000 ms\n'
+2022-03-22 08:09:03,377 - DEBUG - :a:a: b'PING 172.16.32.129 (172.16.32.129) 56(84) bytes of data.\n64 bytes from 172.16.32.129: icmp_seq=1 ttl=64 time=2.21 ms\n\n--- 172.16.32.129 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.212/2.212/2.212/0.000 ms\n'
+2022-03-22 08:09:03,433 - DEBUG - tet : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 08:09:03,437 - DEBUG - $,RPWCSD,009,08:090600,0*
+2022-03-22 08:09:03,439 - INFO - New camera : 172.16.32.129
+2022-03-22 08:09:29,383 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 08:09:29,453 - DEBUG - :a:a: b'PING 172.16.32.129 (172.16.32.129) 56(84) bytes of data.\n64 bytes from 172.16.32.129: icmp_seq=1 ttl=64 time=2.12 ms\n\n--- 172.16.32.129 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.120/2.120/2.120/0.000 ms\n'
+2022-03-22 08:10:29,541 - DEBUG - auto : b'? (172.16.32.129) at b8:27:eb:ce:4f:78 [ether] on wlan0\n'
+2022-03-22 08:10:29,544 - INFO - Camera turn all off.
+2022-03-22 08:10:29,575 - DEBUG - :a:a: b'PING 172.16.32.129 (172.16.32.129) 56(84) bytes of data.\n64 bytes from 172.16.32.129: icmp_seq=1 ttl=64 time=1.93 ms\n\n--- 172.16.32.129 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.925/1.925/1.925/0.000 ms\n'
+2022-03-22 14:45:17,464 - INFO -  *** Starting server *** 
+2022-03-22 14:45:17,467 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2022-03-22 14:45:17,467 - INFO -  * Running on http://172.16.32.27:80/ (Press CTRL+C to quit)
+2022-03-28 16:11:06,170 - INFO - New login username : admin ip : 172.16.32.123
+2022-03-28 16:11:34,861 - INFO - Camera modify the light value.
+2022-03-28 16:11:34,862 - INFO - New camera : 172.16.32.144
+2022-03-28 16:11:35,063 - INFO - Camera modify the light value.
+2022-03-28 16:11:35,064 - INFO - New camera : 172.16.32.144
+2022-03-28 16:11:44,691 - INFO - New camera : 172.16.32.144
+2022-03-28 16:12:39,313 - INFO - Camera turn all off.
+2022-03-28 16:12:54,332 - INFO - Camera modify the light value.
+2022-03-28 16:12:54,333 - INFO - New camera : 172.16.32.144
+2022-03-28 16:12:54,973 - INFO - Camera modify the light value.
+2022-03-28 16:12:54,976 - INFO - New camera : 172.16.32.144
+2022-03-28 16:14:46,398 - INFO - New camera : 172.16.32.144
+2022-03-28 16:14:47,053 - INFO - Camera modify the light value.
+2022-03-28 16:14:47,054 - INFO - New camera : 172.16.32.144
+2022-03-28 16:14:48,503 - INFO - Camera modify the light value.
+2022-03-28 16:14:48,503 - INFO - New camera : 172.16.32.144
+2022-03-28 16:14:52,399 - INFO - New camera : 172.16.32.144
+2022-03-28 16:14:53,012 - INFO - Camera modify the light value.
+2022-03-28 16:14:53,014 - INFO - New camera : 172.16.32.144
+2022-03-28 16:17:19,752 - INFO - New camera : 172.16.32.144
+2022-03-28 16:17:41,554 - INFO - Camera modify the light value.
+2022-03-28 16:17:41,556 - INFO - New camera : 172.16.32.144
+2022-03-28 16:23:46,318 - INFO - New camera : 172.16.32.144
+2022-03-28 16:24:02,533 - INFO - Camera modify the light value.
+2022-03-28 16:24:02,534 - INFO - New camera : 172.16.32.144
+2022-03-28 16:24:28,928 - INFO - New camera : 172.16.32.144
+2022-03-28 16:25:41,003 - INFO - Camera turn all off.
+2022-03-28 16:25:57,917 - INFO - Camera modify the light value.
+2022-03-28 16:25:57,918 - INFO - New camera : 172.16.32.144
+2022-03-28 16:26:04,784 - INFO - Camera modify the light value.
+2022-03-28 16:26:04,785 - INFO - New camera : 172.16.32.144
+2022-03-28 16:26:20,464 - INFO - Camera modify the light value.
+2022-03-28 16:26:20,464 - INFO - New camera : 172.16.32.144
+2022-03-28 16:26:20,645 - INFO - Camera modify the light value.
+2022-03-28 16:26:20,646 - INFO - New camera : 172.16.32.144
+2022-03-28 16:26:22,522 - INFO - Camera modify the light value.
+2022-03-28 16:26:22,523 - INFO - New camera : 172.16.32.144
+2022-03-28 16:26:56,575 - INFO - New camera : 172.16.32.144
+2022-03-28 16:27:07,616 - INFO - New camera : 172.16.32.144
+2022-03-28 16:27:08,406 - INFO - Camera modify the light value.
+2022-03-28 16:27:08,407 - INFO - New camera : 172.16.32.144
+2022-03-28 16:27:09,216 - INFO - New camera : 172.16.32.144
+2022-03-28 16:27:09,835 - INFO - Camera modify the light value.
+2022-03-28 16:27:09,835 - INFO - New camera : 172.16.32.144
+2022-03-28 16:27:11,290 - INFO - New camera : 172.16.32.144
+2022-03-28 16:28:03,677 - INFO - New camera : 172.16.32.144
+2022-03-28 16:28:08,725 - INFO - Camera modify the light value.
+2022-03-28 16:28:08,726 - INFO - New camera : 172.16.32.144
+2022-03-28 16:28:14,956 - INFO - New camera : 172.16.32.144
+2022-03-28 16:28:19,539 - INFO - Camera modify the light value.
+2022-03-28 16:28:19,540 - INFO - New camera : 172.16.32.144
+2022-03-28 16:28:32,134 - INFO - New camera : 172.16.32.144
+2022-03-28 16:28:40,125 - INFO - Camera modify the light value.
+2022-03-28 16:28:40,128 - INFO - New camera : 172.16.32.144
+2022-03-28 16:29:02,821 - INFO - New camera : 172.16.32.144
+2022-03-28 16:29:08,389 - INFO - Camera modify the light value.
+2022-03-28 16:29:08,390 - INFO - New camera : 172.16.32.144
+2022-03-28 16:30:35,534 - INFO - Camera modify the light value.
+2022-03-28 16:30:35,535 - INFO - New camera : 172.16.32.144
+2022-03-28 16:31:01,610 - INFO - New camera : 172.16.32.144
+2022-03-28 16:31:32,187 - INFO - New camera : 172.16.32.144
+2022-03-28 16:31:40,363 - INFO - Camera modify the light value.
+2022-03-28 16:31:40,364 - INFO - New camera : 172.16.32.144
+2022-03-28 16:31:47,020 - INFO - New camera : 172.16.32.144
+2022-03-28 16:31:52,866 - INFO - Camera modify the light value.
+2022-03-28 16:31:52,867 - INFO - New camera : 172.16.32.144
+2022-03-28 16:32:01,055 - INFO - New camera : 172.16.32.144
+2022-03-28 16:32:07,465 - INFO - Camera modify the light value.
+2022-03-28 16:32:07,466 - INFO - New camera : 172.16.32.144
+2022-03-28 16:36:33,138 - INFO - New camera : 172.16.32.129
+2022-03-28 16:36:41,838 - INFO - Camera modify the light value.
+2022-03-28 16:36:41,838 - INFO - New camera : 172.16.32.129
+2022-03-28 16:37:09,550 - INFO - Camera modify the light value.
+2022-03-28 16:37:09,551 - INFO - New camera : 172.16.32.129
+2022-03-28 16:38:03,205 - INFO - New camera : 172.16.32.144
+2022-03-28 16:38:23,722 - INFO - New camera : 172.16.32.144
+2022-03-28 16:40:15,680 - INFO - Camera modify the light value.
+2022-03-28 16:40:15,681 - INFO - New camera : 172.16.32.144
+2022-03-28 16:40:32,815 - INFO - New camera : 172.16.32.129
+2022-03-28 16:40:38,954 - INFO - Camera modify the light value.
+2022-03-28 16:40:38,955 - INFO - New camera : 172.16.32.129
+2022-03-28 16:48:18,165 - INFO - New camera : 172.16.32.144
+2022-03-28 16:49:44,387 - INFO - Camera turn all off.
+2022-03-28 16:49:57,803 - INFO - Camera modify the light value.
+2022-03-28 16:49:57,804 - INFO - New camera : 172.16.32.144
+2022-03-28 16:49:57,981 - INFO - Camera modify the light value.
+2022-03-28 16:49:57,982 - INFO - New camera : 172.16.32.144
+2022-03-28 16:50:17,041 - INFO - New camera : 172.16.32.144
+2022-03-28 16:51:52,341 - ERROR - Exception on /camera [POST]
+Traceback (most recent call last):
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/pi/tpi_forestier_gestion_lumiere_knx/5_Programmation/server/main.py", line 845, in camera
+    if number_off_people > 0:
+UnboundLocalError: local variable 'number_off_people' referenced before assignment
+2022-03-28 16:51:58,304 - ERROR - Exception on /camera [POST]
+Traceback (most recent call last):
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/pi/tpi_forestier_gestion_lumiere_knx/5_Programmation/server/main.py", line 817, in camera
+    number_off_people = number_off_people + 1
+UnboundLocalError: local variable 'number_off_people' referenced before assignment
+2022-03-28 16:54:39,140 - INFO - New camera : 172.16.32.144
+2022-03-28 16:54:42,691 - ERROR - Exception on /camera [POST]
+Traceback (most recent call last):
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/pi/controle-des-lumieres-knx/5_Programmation/server/serverenv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/pi/tpi_forestier_gestion_lumiere_knx/5_Programmation/server/main.py", line 819, in camera
+    logging.info("new_people : " + number_off_people)
+TypeError: can only concatenate str (not "int") to str
+2022-03-28 16:55:30,745 - INFO - Camera turn all off.
+2022-03-28 16:55:41,412 - INFO - New camera : 172.16.32.144
+2022-03-28 16:56:21,886 - INFO - New camera : 172.16.32.144
+2022-03-28 16:56:30,824 - INFO - Camera turn all off.
+2022-03-28 16:57:30,655 - INFO - New camera : 172.16.32.144
+2022-03-28 16:57:35,076 - INFO - new_people : 1
+2022-03-28 16:57:35,077 - INFO - Camera modify the light value.
+2022-03-28 16:57:35,078 - INFO - New camera : 172.16.32.144
+2022-03-28 16:58:37,305 - INFO - personne_going_out : 0
+2022-03-28 16:58:37,306 - INFO - New camera : 172.16.32.144
+2022-03-28 16:58:47,480 - INFO - new_people : 1
+2022-03-28 16:58:47,482 - INFO - Camera modify the light value.
+2022-03-28 16:58:47,482 - INFO - New camera : 172.16.32.144
+2022-03-28 17:01:53,011 - INFO - New camera : 172.16.32.144
+2022-03-28 17:02:26,077 - INFO - New camera : 172.16.32.144
+2022-03-28 17:05:08,614 - INFO - new_people : 2
+2022-03-28 17:05:08,617 - INFO - Camera modify the light value.
+2022-03-28 17:05:08,618 - INFO - New camera : 172.16.32.144
+2022-03-28 17:05:58,877 - INFO - personne_going_out : 1
+2022-03-28 17:05:58,877 - INFO - New camera : 172.16.32.144
+2022-03-28 17:06:31,630 - INFO - Camera turn all off.
+2022-03-28 17:06:32,857 - INFO - personne_going_out : 0
+2022-03-28 17:06:32,857 - INFO - New camera : 172.16.32.144
+2022-03-28 17:07:31,839 - INFO - Camera turn all off.
+2022-03-28 17:09:12,984 - INFO - new_people : 1
+2022-03-28 17:09:12,985 - INFO - Camera modify the light value.
+2022-03-28 17:09:12,986 - INFO - New camera : 172.16.32.144
+2022-03-28 17:09:57,787 - INFO - personne_going_out : 0
+2022-03-28 17:09:57,788 - INFO - New camera : 172.16.32.144
+2022-03-28 17:10:32,157 - INFO - Camera turn all off.
+2022-03-28 17:10:54,824 - INFO - New camera : 172.16.32.144
+2022-03-28 17:11:32,268 - INFO - Camera turn all off.
+2022-03-28 17:11:56,075 - INFO - new_people : 1
+2022-03-28 17:11:56,077 - INFO - Camera modify the light value.
+2022-03-28 17:11:56,078 - INFO - New camera : 172.16.32.144
+2022-03-28 17:11:59,253 - INFO - personne_going_out : 0
+2022-03-28 17:11:59,254 - INFO - New camera : 172.16.32.144
+2022-03-28 17:12:32,414 - INFO - Camera turn all off.
+2022-03-28 17:13:26,585 - INFO - new_people : 1
+2022-03-28 17:13:26,587 - INFO - Camera modify the light value.
+2022-03-28 17:13:26,587 - INFO - New camera : 172.16.32.144
+2022-03-28 17:13:50,241 - INFO - personne_going_out : 0
+2022-03-28 17:13:50,244 - INFO - New camera : 172.16.32.144
+2022-03-28 17:14:32,746 - INFO - Camera turn all off.
+2022-03-29 00:00:49,594 - INFO - Reset munit !
+2022-03-29 07:40:58,205 - INFO - new_people : 1
+2022-03-29 07:40:58,207 - INFO - Camera modify the light value.
+2022-03-29 07:40:58,207 - INFO - New camera : 172.16.32.144
+2022-03-29 07:42:09,574 - INFO - new_people : 2
+2022-03-29 07:42:09,577 - INFO - Camera modify the light value.
+2022-03-29 07:42:09,578 - INFO - New camera : 172.16.32.144
+2022-03-29 07:46:05,617 - INFO - new_people : 3
+2022-03-29 07:46:05,618 - INFO - Camera modify the light value.
+2022-03-29 07:46:05,619 - INFO - New camera : 172.16.32.144
+2022-03-29 07:53:47,661 - INFO - personne_going_out : 2
+2022-03-29 07:53:47,661 - INFO - New camera : 172.16.32.144
+2022-03-29 07:54:14,049 - INFO - Camera turn all off.
+2022-03-29 08:17:29,923 - INFO - personne_going_out : 1
+2022-03-29 08:17:29,924 - INFO - New camera : 172.16.32.144
+2022-03-29 08:18:17,939 - INFO - Camera turn all off.
+2022-03-29 08:18:38,173 - INFO - new_people : 2
+2022-03-29 08:18:38,175 - INFO - Camera modify the light value.
+2022-03-29 08:18:38,175 - INFO - New camera : 172.16.32.144
+2022-03-29 08:35:59,028 - INFO - personne_going_out : 1
+2022-03-29 08:35:59,029 - INFO - New camera : 172.16.32.144
+2022-03-29 08:36:21,410 - INFO - new_people : 2
+2022-03-29 08:36:21,412 - INFO - Camera modify the light value.
+2022-03-29 08:36:21,412 - INFO - New camera : 172.16.32.144
+2022-03-29 08:39:24,661 - INFO - personne_going_out : 1
+2022-03-29 08:39:24,662 - INFO - New camera : 172.16.32.144
+2022-03-29 08:40:22,473 - INFO - Camera turn all off.
+2022-03-29 08:53:03,795 - INFO - personne_going_out : 0
+2022-03-29 08:53:03,796 - INFO - New camera : 172.16.32.144
+2022-03-29 08:54:24,677 - INFO - Camera turn all off.
+2022-03-29 08:54:51,143 - INFO - new_people : 1
+2022-03-29 08:54:51,145 - INFO - Camera modify the light value.
+2022-03-29 08:54:51,146 - INFO - New camera : 172.16.32.144
+2022-03-29 08:57:42,302 - INFO - personne_going_out : 0
+2022-03-29 08:57:42,303 - INFO - New camera : 172.16.32.144
+2022-03-29 08:58:25,314 - INFO - Camera turn all off.
+2022-03-29 08:58:36,357 - INFO - new_people : 1
+2022-03-29 08:58:36,359 - INFO - Camera modify the light value.
+2022-03-29 08:58:36,361 - INFO - New camera : 172.16.32.144
+2022-03-29 09:01:35,199 - INFO - personne_going_out : 0
+2022-03-29 09:01:35,200 - INFO - New camera : 172.16.32.144
+2022-03-29 09:02:25,906 - INFO - Camera turn all off.
+2022-03-29 09:22:33,179 - INFO - New camera : 172.16.32.144
+2022-03-29 09:22:50,237 - INFO - New camera : 172.16.32.144
+2022-03-29 09:22:50,792 - INFO - new_people : 1
+2022-03-29 09:22:50,793 - INFO - Camera modify the light value.
+2022-03-29 09:22:50,793 - INFO - New camera : 172.16.32.144
+2022-03-29 09:31:45,535 - INFO - new_people : 2
+2022-03-29 09:31:45,536 - INFO - Camera modify the light value.
+2022-03-29 09:31:45,537 - INFO - New camera : 172.16.32.144
+2022-03-29 09:36:00,835 - INFO - personne_going_out : 1
+2022-03-29 09:36:00,836 - INFO - New camera : 172.16.32.144
+2022-03-29 09:37:32,334 - INFO - Camera turn all off.
+2022-03-29 09:42:43,674 - INFO - new_people : 2
+2022-03-29 09:42:43,676 - INFO - Camera modify the light value.
+2022-03-29 09:42:43,676 - INFO - New camera : 172.16.32.144
+2022-03-29 09:51:37,707 - INFO - New camera : 172.16.32.144
+2022-03-29 09:52:04,627 - INFO - Number of people : 1
+2022-03-29 09:52:04,630 - INFO - Camera modify the light value.
+2022-03-29 09:52:04,631 - INFO - New camera : 172.16.32.144
+2022-03-29 09:52:28,897 - INFO - Number of people : 0
+2022-03-29 09:52:28,900 - INFO - New camera : 172.16.32.144
+2022-03-29 09:53:21,745 - INFO - Camera turn all off.
+2022-03-29 09:53:31,463 - INFO - Number of people : 1
+2022-03-29 09:53:31,467 - INFO - Camera modify the light value.
+2022-03-29 09:53:31,468 - INFO - New camera : 172.16.32.144
+2022-03-29 10:00:23,141 - INFO - Turn all off automatically
+2022-03-29 16:30:25,970 - INFO -  *** Number of people : 0 ***
+2022-03-29 16:30:25,974 - INFO -  *** New camera : 172.16.32.144 *** 
+2022-03-29 16:32:07,668 - INFO -  *** Number of people : 0 ***
+2022-03-29 16:32:07,671 - INFO -  *** New camera : 172.16.32.129 *** 
+2022-03-29 16:32:17,499 - INFO -  *** Number of people : 1 ***
+2022-03-29 16:35:41,065 - INFO -  *** Number of people : 0 ***
+2022-03-29 16:38:07,913 - INFO -  *** Number of people : 0 ***
+2022-03-29 16:39:17,408 - INFO -  *** Number of people : 1 ***
+2022-03-29 16:39:17,412 - INFO -  *** Camera turn on the light. *** 
+2022-03-29 16:39:17,706 - INFO -  *** Number of people : 2 ***
+2022-03-29 16:39:17,709 - INFO -  *** Camera turn on the light. *** 
+2022-03-29 16:42:02,275 - INFO -  *** Number of people : 0 ***
+2022-03-29 16:42:02,279 - INFO -  *** New camera : 172.16.32.144 *** 
+2022-03-29 16:45:55,456 - INFO -  *** Number of people : 0 ***
+2022-03-29 16:45:55,459 - INFO -  *** New camera : 172.16.32.144 *** 
+2022-03-29 16:46:57,149 - INFO -  *** Number of people : 0 ***
+2022-03-29 16:48:30,340 - INFO -  *** Number of people : 1 ***
+2022-03-29 16:48:30,343 - INFO -  *** Camera turn on the light. *** 
+2022-03-29 16:50:40,821 - INFO -  *** Number of people : 2 ***
+2022-03-29 16:50:40,824 - INFO -  *** Camera turn on the light. *** 
+2022-03-29 16:51:26,290 - INFO -  *** Number of people : 0 ***
+2022-03-29 16:51:26,399 - INFO -  *** New camera : 172.16.32.144 *** 
+2022-03-29 16:52:00,000 - INFO - time : 16:52
+2022-03-29 16:52:00,008 - INFO -  *** Camera turn all the light off ***
+2022-03-29 16:52:00,009 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 16:52:10,312 - INFO -  *** Number of people : 1 ***
+2022-03-29 16:52:10,422 - INFO -  *** Camera turn on the light. *** 
+2022-03-29 16:53:00,000 - INFO - time : 16:53
+2022-03-29 16:53:00,001 - WARNING -  *** Temp = 61°C *** 
+2022-03-29 16:53:55,218 - INFO -  *** Number of people : 0 ***
+2022-03-29 16:53:55,333 - INFO -  *** New camera : 172.16.32.129 *** 
+2022-03-29 16:54:00,008 - INFO -  *** Camera turn all the light off ***
+2022-03-29 16:54:00,009 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 16:54:00,727 - INFO -  *** Number of people : 0 ***
+2022-03-29 16:54:25,371 - INFO -  *** Number of people : 0 ***
+2022-03-29 16:54:34,529 - INFO -  *** Number of people : 1 ***
+2022-03-29 16:54:34,623 - INFO -  *** Camera turn on the light. *** 
+2022-03-29 16:54:50,921 - INFO -  *** Number of people : 0 ***
+2022-03-29 16:54:51,016 - INFO -  *** New camera : 172.16.32.144 *** 
+2022-03-29 16:55:00,001 - INFO -  *** Camera turn all the light off ***
+2022-03-29 16:55:00,002 - WARNING -  *** Temp = 61°C *** 
+2022-03-29 16:55:09,369 - INFO -  *** Number of people : 1 ***
+2022-03-29 16:55:09,449 - INFO -  *** Camera turn on the light. *** 
+2022-03-29 16:56:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 16:57:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 16:58:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 16:58:36,724 - INFO -  *** Number of people : 0 ***
+2022-03-29 16:59:00,001 - INFO -  *** Camera turn all the light off ***
+2022-03-29 16:59:00,002 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 16:59:56,261 - INFO -  *** Number of people : 1 ***
+2022-03-29 16:59:56,376 - INFO -  *** Camera turn on the light. *** 
+2022-03-29 17:00:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:01:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:02:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:03:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:04:00,001 - WARNING -  *** Temp = 61°C *** 
+2022-03-29 17:05:00,001 - WARNING -  *** Temp = 62°C *** 
+2022-03-29 17:06:00,001 - WARNING -  *** Temp = 62°C *** 
+2022-03-29 17:07:00,001 - WARNING -  *** Temp = 62°C *** 
+2022-03-29 17:08:00,001 - WARNING -  *** Temp = 62°C *** 
+2022-03-29 17:09:00,001 - WARNING -  *** Temp = 61°C *** 
+2022-03-29 17:10:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:11:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:12:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:13:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:13:39,616 - INFO -  *** Number of people : 0 ***
+2022-03-29 17:13:44,934 - INFO -  *** Number of people : 1 ***
+2022-03-29 17:13:45,018 - INFO -  *** Camera turn on the light. *** 
+2022-03-29 17:13:45,734 - INFO -  *** Number of people : 2 ***
+2022-03-29 17:13:45,839 - INFO -  *** Camera turn on the light. *** 
+2022-03-29 17:14:00,001 - WARNING -  *** Temp = 61°C *** 
+2022-03-29 17:14:56,229 - INFO -  *** Number of people : 1 ***
+2022-03-29 17:15:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:15:01,989 - INFO -  *** Number of people : 2 ***
+2022-03-29 17:15:02,093 - INFO -  *** Camera turn on the light. *** 
+2022-03-29 17:16:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:17:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:18:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:18:06,269 - INFO -  *** Number of people : 1 ***
+2022-03-29 17:19:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:20:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:21:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:22:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:23:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:24:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:25:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:26:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:27:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:28:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:29:00,009 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:30:00,006 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:31:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:32:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:33:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:34:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:34:07,891 - INFO -  *** Number of people : 2 ***
+2022-03-29 17:34:08,042 - INFO -  *** Camera turn on the light. *** 
+2022-03-29 17:34:10,182 - INFO -  *** Number of people : 1 ***
+2022-03-29 17:34:12,774 - INFO -  *** Number of people : 2 ***
+2022-03-29 17:34:12,868 - INFO -  *** Camera turn on the light. *** 
+2022-03-29 17:34:32,415 - INFO -  *** Number of people : 1 ***
+2022-03-29 17:35:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:36:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:37:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:38:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:39:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:40:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:41:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:42:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:43:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:44:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:45:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:46:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:47:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:48:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:49:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:50:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:51:00,001 - WARNING -  *** Temp = 61°C *** 
+2022-03-29 17:52:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:52:45,272 - INFO -  *** Number of people : 2 ***
+2022-03-29 17:52:45,383 - INFO -  *** Camera turn on the light. *** 
+2022-03-29 17:52:55,270 - INFO -  *** Number of people : 3 ***
+2022-03-29 17:52:55,329 - INFO -  *** Camera turn on the light. *** 
+2022-03-29 17:53:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:54:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:55:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:56:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 17:57:00,001 - WARNING -  *** Temp = 61°C *** 
+2022-03-29 17:58:00,001 - WARNING -  *** Temp = 61°C *** 
+2022-03-29 17:59:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:00:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:01:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:02:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:03:00,001 - WARNING -  *** Temp = 61°C *** 
+2022-03-29 18:04:00,005 - WARNING -  *** Temp = 61°C *** 
+2022-03-29 18:05:00,002 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:06:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:06:49,500 - INFO -  *** Number of people : 4 ***
+2022-03-29 18:07:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:07:06,689 - INFO -  *** Number of people : 3 ***
+2022-03-29 18:08:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:09:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:10:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:11:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:12:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:13:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:14:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:15:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:16:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:17:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:18:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:19:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:20:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:21:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:22:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:23:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:24:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:25:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:26:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:27:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:28:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:29:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:30:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:31:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:32:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:33:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:35:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:36:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:37:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:38:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:39:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:40:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:41:00,015 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:42:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:43:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:44:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:45:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:46:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:48:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:49:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:50:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:51:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:52:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:53:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:54:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:55:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:56:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:57:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:58:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 18:59:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:01:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:02:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:03:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:04:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:05:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:06:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:07:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:08:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:09:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:10:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:11:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:12:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:13:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:14:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:15:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:16:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:17:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:18:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:19:00,004 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:20:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:21:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:22:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:24:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:25:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:26:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:28:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:29:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:30:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:32:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:34:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:35:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:36:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:37:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:39:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:40:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:41:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:42:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:43:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:44:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:45:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:46:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:47:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:48:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:49:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:50:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:51:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:52:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:53:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:54:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:55:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:56:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:57:00,005 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:58:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 19:59:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:00:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:01:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:02:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:03:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:04:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:05:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:07:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:08:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:09:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:10:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:11:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:12:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:13:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:14:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:16:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:19:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:20:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:22:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:23:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:24:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:25:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:26:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:27:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:28:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:29:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:30:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:31:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:32:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:33:00,004 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:34:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:35:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:36:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:37:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:38:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:39:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:40:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:41:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:42:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:43:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:44:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:46:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:47:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:48:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:49:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:51:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:52:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:54:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:55:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:56:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:57:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:58:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 20:59:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:01:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:03:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:04:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:05:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:07:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:08:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:09:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:10:00,003 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:11:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:13:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:14:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:15:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:16:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:18:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:19:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:21:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:22:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:23:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:24:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:25:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:26:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:27:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:28:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:29:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:30:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:31:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:32:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:33:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:34:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:35:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:37:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:38:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:39:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:40:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:42:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:43:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:44:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:45:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:46:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:47:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:48:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:49:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:50:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:51:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:52:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:53:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:54:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:55:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:56:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:57:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:58:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 21:59:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:00:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:01:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:03:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:04:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:06:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:07:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:09:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:10:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:11:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:12:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:13:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:15:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:16:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:17:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:18:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:19:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:20:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:21:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:23:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:24:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:25:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:26:00,008 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:27:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:28:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:31:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:32:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:33:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:34:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:35:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:39:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:40:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:41:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:42:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:43:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:44:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:45:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:48:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:49:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:50:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:51:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:52:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:55:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:56:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 22:59:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:00:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:01:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:02:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:03:00,002 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:04:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:05:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:06:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:08:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:10:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:11:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:12:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:13:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:15:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:16:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:17:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:18:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:19:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:20:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:21:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:22:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:23:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:24:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:25:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:26:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:27:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:28:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:29:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:30:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:31:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:32:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:33:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:34:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:35:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:36:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:38:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:39:00,004 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:40:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:41:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:42:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:43:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:44:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:46:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:47:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:48:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:49:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:50:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:51:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:52:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:53:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:54:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:55:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:56:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:57:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:58:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-29 23:59:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:00:00,000 - INFO -  *** Reset midnight ***
+2022-03-30 00:00:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:01:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:02:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:03:00,001 - WARNING -  *** Temp = 61°C *** 
+2022-03-30 00:04:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:05:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:06:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:07:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:08:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:09:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:10:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:11:00,003 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:12:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:13:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:15:00,002 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:17:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:18:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:19:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:20:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:22:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:23:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:24:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:25:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:26:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:27:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:28:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:29:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:30:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:31:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:32:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:33:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:34:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:35:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:37:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:38:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:39:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:40:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:41:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:42:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:43:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:45:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:47:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:48:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:49:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:50:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:51:00,010 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:52:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:53:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:54:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:57:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 00:59:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:00:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:01:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:03:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:04:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:05:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:06:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:07:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:08:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:11:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:12:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:13:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:14:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:16:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:17:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:18:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:19:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:20:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:21:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:22:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:23:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:24:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:26:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:27:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:28:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:29:00,004 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:30:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:31:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:32:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:33:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:34:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:35:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:36:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:37:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:38:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:40:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:41:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:42:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:43:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:44:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:46:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:47:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:48:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:50:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:51:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:52:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:53:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:54:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:55:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:57:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 01:59:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:00:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:01:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:02:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:03:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:04:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:05:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:07:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:08:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:09:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:10:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:11:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:12:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:14:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:15:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:16:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:17:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:18:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:19:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:20:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:21:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:22:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:24:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:25:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:26:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:28:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:29:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:30:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:31:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:32:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:33:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:34:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:36:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:37:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:38:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:39:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:41:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:42:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:43:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:44:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:45:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:46:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:47:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:48:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:49:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:50:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:51:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:52:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:53:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:55:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:56:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:57:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 02:59:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:00:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:01:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:02:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:03:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:04:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:05:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:06:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:07:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:08:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:09:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:10:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:11:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:13:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:14:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:15:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:16:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:18:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:20:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:21:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:22:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:23:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:25:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:26:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:27:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:29:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:30:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:31:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:33:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:35:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:37:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:38:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:39:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:40:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:41:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:42:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:43:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:44:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:45:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:46:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:47:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:48:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:49:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:50:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:52:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:53:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:54:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:55:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:56:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:57:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:58:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 03:59:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:00:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:01:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:02:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:03:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:04:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:06:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:09:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:10:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:11:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:13:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:16:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:17:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:18:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:19:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:20:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:21:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:22:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:23:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:25:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:26:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:27:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:28:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:29:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:30:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:31:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:32:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:33:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:34:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:37:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:38:00,005 - WARNING -  *** Temp = 61°C *** 
+2022-03-30 04:40:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:41:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:42:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:43:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:45:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:46:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:48:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:49:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:50:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:51:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:54:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:55:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:56:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 04:57:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:00:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:01:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:02:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:03:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:05:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:06:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:07:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:09:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:11:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:12:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:15:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:16:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:17:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:18:00,004 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:20:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:21:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:22:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:23:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:24:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:25:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:26:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:28:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:29:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:31:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:32:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:33:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:34:00,001 - WARNING -  *** Temp = 61°C *** 
+2022-03-30 05:35:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:36:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:37:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:38:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:39:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:40:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:41:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:42:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:43:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:45:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:46:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:47:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:48:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:49:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:50:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:51:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:53:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:55:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:56:00,002 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 05:59:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:01:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:03:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:05:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:06:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:07:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:08:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:09:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:11:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:13:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:14:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:15:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:16:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:17:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:19:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:20:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:21:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:22:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:23:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:24:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:25:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:26:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:27:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:28:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:30:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:31:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:32:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:33:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:35:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:36:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:37:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:38:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:39:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:42:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:44:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:45:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:46:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:48:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:49:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:51:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:52:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:53:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:54:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:56:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:57:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:58:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 06:59:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:00:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:01:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:03:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:04:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:05:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:06:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:07:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:08:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:09:00,004 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:11:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:12:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:13:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:14:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:15:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:16:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:17:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:19:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:20:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:21:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:22:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:23:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:26:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:28:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:29:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:30:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:31:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:32:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:33:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:34:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:35:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:36:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:37:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:38:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:39:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:40:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:41:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:43:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:45:44,163 - INFO -  *** Number of people : 0 ***
+2022-03-30 07:45:56,962 - INFO -  *** Number of people : 1 ***
+2022-03-30 07:46:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:47:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:47:16,026 - INFO -  *** Number of people : 2 ***
+2022-03-30 07:48:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:49:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:49:58,867 - INFO -  *** Number of people : 3 ***
+2022-03-30 07:50:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:50:01,422 - INFO -  *** Number of people : 2 ***
+2022-03-30 07:50:10,626 - INFO -  *** Number of people : 1 ***
+2022-03-30 07:50:52,997 - INFO -  *** Number of people : 2 ***
+2022-03-30 07:51:13,619 - INFO -  *** Number of people : 1 ***
+2022-03-30 07:52:23,716 - INFO -  *** Number of people : 2 ***
+2022-03-30 07:53:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:53:55,409 - INFO -  *** Number of people : 1 ***
+2022-03-30 07:53:56,180 - INFO -  *** Number of people : 2 ***
+2022-03-30 07:54:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:55:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:57:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:57:33,511 - INFO -  *** Number of people : 1 ***
+2022-03-30 07:58:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:59:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 07:59:51,438 - INFO -  *** Number of people : 2 ***
+2022-03-30 08:00:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:01:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:02:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:03:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:04:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:04:53,419 - INFO -  *** Number of people : 1 ***
+2022-03-30 08:05:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:05:32,625 - INFO -  *** Number of people : 0 ***
+2022-03-30 08:06:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:07:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:08:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:08:01,591 - INFO -  *** Number of people : 0 ***
+2022-03-30 08:08:29,810 - INFO -  *** Number of people : 1 ***
+2022-03-30 08:08:30,233 - INFO -  *** Number of people : 2 ***
+2022-03-30 08:09:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:10:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:11:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:13:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:14:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:16:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:17:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:18:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:19:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:21:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:21:08,107 - INFO -  *** Number of people : 1 ***
+2022-03-30 08:22:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:22:16,089 - INFO -  *** Number of people : 0 ***
+2022-03-30 08:22:16,852 - INFO -  *** Number of people : 1 ***
+2022-03-30 08:22:19,939 - INFO -  *** Number of people : 0 ***
+2022-03-30 08:22:20,947 - INFO -  *** Number of people : 1 ***
+2022-03-30 08:22:59,243 - INFO -  *** Number of people : 2 ***
+2022-03-30 08:23:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:24:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:24:03,509 - INFO -  *** Number of people : 1 ***
+2022-03-30 08:25:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:25:00,761 - INFO -  *** Number of people : 2 ***
+2022-03-30 08:25:07,164 - INFO -  *** Number of people : 3 ***
+2022-03-30 08:25:55,014 - INFO -  *** Number of people : 2 ***
+2022-03-30 08:26:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:26:05,310 - INFO -  *** Number of people : 3 ***
+2022-03-30 08:27:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:29:14,427 - INFO -  *** Number of people : 2 ***
+2022-03-30 08:29:32,550 - INFO -  *** Number of people : 3 ***
+2022-03-30 08:30:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:31:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:34:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:34:22,982 - INFO -  *** Number of people : 2 ***
+2022-03-30 08:35:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:35:05,416 - INFO -  *** Number of people : 3 ***
+2022-03-30 08:35:07,216 - INFO -  *** Number of people : 4 ***
+2022-03-30 08:35:07,741 - INFO -  *** Number of people : 5 ***
+2022-03-30 08:36:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:37:49,589 - INFO -  *** Number of people : 4 ***
+2022-03-30 08:38:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:38:21,853 - INFO -  *** Number of people : 5 ***
+2022-03-30 08:39:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:40:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:41:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:42:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:42:01,508 - INFO -  *** Number of people : 6 ***
+2022-03-30 08:42:17,898 - INFO -  *** Number of people : 7 ***
+2022-03-30 08:42:40,833 - INFO -  *** Number of people : 6 ***
+2022-03-30 08:43:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:43:38,896 - INFO -  *** Number of people : 5 ***
+2022-03-30 08:43:40,604 - INFO -  *** Number of people : 6 ***
+2022-03-30 08:43:52,346 - INFO -  *** Number of people : 5 ***
+2022-03-30 08:43:59,604 - INFO -  *** Number of people : 4 ***
+2022-03-30 08:44:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:44:00,415 - INFO -  *** Number of people : 5 ***
+2022-03-30 08:44:32,866 - INFO -  *** Number of people : 6 ***
+2022-03-30 08:45:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:45:01,984 - INFO -  *** Number of people : 7 ***
+2022-03-30 08:45:02,784 - INFO -  *** Number of people : 8 ***
+2022-03-30 08:46:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:46:38,608 - INFO -  *** Number of people : 7 ***
+2022-03-30 08:47:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:48:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:49:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:49:43,132 - INFO -  *** Number of people : 6 ***
+2022-03-30 08:49:55,928 - INFO -  *** Number of people : 7 ***
+2022-03-30 08:49:56,657 - INFO -  *** Number of people : 8 ***
+2022-03-30 08:49:57,062 - INFO -  *** Number of people : 7 ***
+2022-03-30 08:50:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:51:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:52:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:53:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:54:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:55:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:56:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:57:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:58:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 08:59:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 09:00:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 09:01:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 09:02:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 09:03:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 09:03:42,026 - INFO -  *** Number of people : 6 ***
+2022-03-30 09:04:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 09:05:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 09:06:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 09:08:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 09:09:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 09:10:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 09:11:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 09:12:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 09:13:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 09:14:00,001 - WARNING -  *** Temp = 60°C *** 
+2022-03-30 09:14:54,142 - INFO -  *** Number of people : 7 ***
+2022-03-30 09:24:15,716 - INFO -  *** Number of people : 6 ***
+2022-03-30 09:24:43,463 - INFO -  *** Number of people : 7 ***
+2022-03-30 09:26:27,769 - INFO -  *** Number of people : 6 ***
+2022-03-30 09:27:57,199 - INFO -  *** Number of people : 5 ***
+2022-03-30 09:29:00,911 - INFO -  *** Number of people : 6 ***
+2022-03-30 09:29:30,066 - INFO -  *** Number of people : 5 ***
+2022-03-30 09:29:55,294 - INFO -  *** Number of people : 6 ***
+2022-03-30 09:32:10,999 - INFO -  *** Number of people : 7 ***
+2022-03-30 09:36:00,439 - INFO -  *** Number of people : 6 ***
+2022-03-30 09:40:26,001 - INFO -  *** Number of people : 5 ***
+2022-03-30 09:41:37,461 - INFO -  *** Number of people : 6 ***
+2022-03-30 09:42:24,558 - INFO -  *** Number of people : 5 ***
+2022-03-30 09:44:02,505 - INFO -  *** Number of people : 4 ***
+2022-03-30 09:47:07,100 - INFO -  *** Number of people : 5 ***
+2022-03-30 09:48:41,306 - INFO -  *** Number of people : 4 ***
+2022-03-30 09:49:03,460 - INFO -  *** Number of people : 5 ***
+2022-03-30 09:49:19,202 - INFO -  *** Number of people : 6 ***
+2022-03-30 09:49:20,213 - INFO -  *** Number of people : 5 ***
+2022-03-30 09:52:24,904 - INFO -  *** Number of people : 4 ***
+2022-03-30 09:54:10,745 - INFO -  *** Number of people : 3 ***
+2022-03-30 09:54:20,995 - INFO -  *** Number of people : 4 ***
+2022-03-30 10:00:07,076 - INFO -  *** Number of people : 3 ***
+2022-03-30 10:00:37,103 - INFO -  *** Number of people : 4 ***
+2022-03-30 10:02:00,556 - INFO -  *** Number of people : 3 ***
+2022-03-30 10:02:36,409 - INFO -  *** Number of people : 2 ***
+2022-03-30 10:03:20,551 - INFO -  *** Number of people : 1 ***
+2022-03-30 10:05:19,572 - INFO -  *** Number of people : 0 ***
+2022-03-30 10:05:20,236 - INFO -  *** Number of people : 0 ***
+2022-03-30 10:05:32,350 - INFO -  *** Number of people : 1 ***
+2022-03-30 10:06:22,038 - INFO -  *** Number of people : 0 ***
+2022-03-30 10:07:31,017 - INFO -  *** Number of people : 0 ***
+2022-03-30 10:07:31,321 - INFO -  *** Number of people : 0 ***
+2022-03-30 10:07:37,259 - INFO -  *** Number of people : 1 ***
+2022-03-30 10:07:38,633 - INFO -  *** Number of people : 2 ***
+2022-03-30 10:07:39,199 - INFO -  *** Number of people : 3 ***
+2022-03-30 10:07:41,680 - INFO -  *** Number of people : 4 ***
+2022-03-30 10:07:41,870 - INFO -  *** Number of people : 5 ***
+2022-03-30 10:07:42,416 - INFO -  *** Number of people : 4 ***
+2022-03-30 10:07:42,974 - INFO -  *** Number of people : 5 ***
+2022-03-30 10:07:45,866 - INFO -  *** Number of people : 6 ***
+2022-03-30 10:07:46,048 - INFO -  *** Number of people : 5 ***
+2022-03-30 10:07:46,596 - INFO -  *** Number of people : 6 ***
+2022-03-30 10:15:52,172 - INFO -  *** Number of people : 7 ***
+2022-03-30 10:16:20,218 - INFO -  *** Number of people : 6 ***
+2022-03-30 10:16:39,688 - INFO -  *** Number of people : 5 ***
+2022-03-30 10:17:10,809 - INFO -  *** Number of people : 6 ***
+2022-03-30 10:18:14,823 - INFO -  *** Number of people : 5 ***
+2022-03-30 10:18:58,703 - INFO -  *** Number of people : 6 ***
+2022-03-30 10:19:38,793 - INFO -  *** Number of people : 5 ***
+2022-03-30 10:20:44,346 - INFO -  *** Number of people : 4 ***
+2022-03-30 10:20:44,918 - INFO -  *** Number of people : 5 ***
+2022-03-30 10:20:47,083 - INFO -  *** Number of people : 4 ***
+2022-03-30 10:23:15,899 - INFO -  *** Number of people : 5 ***
+2022-03-30 10:27:54,426 - INFO -  *** Number of people : 4 ***
+2022-03-30 10:28:47,879 - INFO -  *** Number of people : 5 ***
+2022-03-30 10:30:34,479 - INFO -  *** Number of people : 4 ***
+2022-03-30 10:31:05,505 - INFO -  *** Number of people : 3 ***
+2022-03-30 10:31:59,782 - INFO -  *** Number of people : 4 ***
+2022-03-30 10:32:30,309 - INFO -  *** Number of people : 5 ***
+2022-03-30 10:32:31,650 - INFO -  *** Number of people : 4 ***
+2022-03-30 10:35:38,410 - INFO -  *** Number of people : 3 ***
+2022-03-30 10:35:48,345 - INFO -  *** Number of people : 4 ***
+2022-03-30 10:35:48,522 - INFO -  *** Number of people : 5 ***
+2022-03-30 10:38:18,022 - INFO -  *** Number of people : 4 ***
+2022-03-30 10:39:31,068 - INFO -  *** Number of people : 5 ***
+2022-03-30 10:44:51,892 - INFO -  *** Number of people : 4 ***
+2022-03-30 10:48:18,177 - INFO -  *** Number of people : 3 ***
+2022-03-30 10:48:57,217 - INFO -  *** Number of people : 4 ***
+2022-03-30 10:49:05,755 - INFO -  *** Number of people : 5 ***
+2022-03-30 10:50:08,830 - INFO -  *** Number of people : 4 ***
+2022-03-30 10:51:37,526 - INFO -  *** Number of people : 5 ***
+2022-03-30 10:53:50,119 - INFO -  *** Number of people : 4 ***
+2022-03-30 10:55:36,616 - INFO -  *** Number of people : 3 ***
+2022-03-30 10:56:20,463 - INFO -  *** Number of people : 4 ***
+2022-03-30 10:56:52,412 - INFO -  *** Number of people : 5 ***
+2022-03-30 11:03:46,408 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:07:45,011 - INFO -  *** Number of people : 5 ***
+2022-03-30 11:08:10,926 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:09:11,280 - INFO -  *** Number of people : 3 ***
+2022-03-30 11:11:37,154 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:14:24,433 - INFO -  *** Number of people : 3 ***
+2022-03-30 11:17:17,128 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:19:40,907 - INFO -  *** Number of people : 5 ***
+2022-03-30 11:19:41,876 - INFO -  *** Number of people : 6 ***
+2022-03-30 11:21:08,670 - INFO -  *** Number of people : 5 ***
+2022-03-30 11:22:03,248 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:22:09,250 - INFO -  *** Number of people : 5 ***
+2022-03-30 11:22:10,570 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:22:26,556 - INFO -  *** Number of people : 3 ***
+2022-03-30 11:22:37,863 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:22:39,259 - INFO -  *** Number of people : 5 ***
+2022-03-30 11:22:39,428 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:22:40,021 - INFO -  *** Number of people : 3 ***
+2022-03-30 11:22:40,960 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:22:41,525 - INFO -  *** Number of people : 5 ***
+2022-03-30 11:22:42,534 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:22:46,779 - INFO -  *** Number of people : 3 ***
+2022-03-30 11:22:48,608 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:22:50,329 - INFO -  *** Number of people : 3 ***
+2022-03-30 11:22:58,055 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:22:58,231 - INFO -  *** Number of people : 5 ***
+2022-03-30 11:22:59,689 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:23:00,566 - INFO -  *** Number of people : 5 ***
+2022-03-30 11:23:02,681 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:23:04,172 - INFO -  *** Number of people : 5 ***
+2022-03-30 11:23:04,758 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:23:06,492 - INFO -  *** Number of people : 3 ***
+2022-03-30 11:23:07,421 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:23:07,999 - INFO -  *** Number of people : 3 ***
+2022-03-30 11:23:08,982 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:23:09,976 - INFO -  *** Number of people : 5 ***
+2022-03-30 11:23:11,337 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:23:11,928 - INFO -  *** Number of people : 3 ***
+2022-03-30 11:23:12,495 - INFO -  *** Number of people : 2 ***
+2022-03-30 11:23:13,461 - INFO -  *** Number of people : 3 ***
+2022-03-30 11:23:23,480 - INFO -  *** Number of people : 4 ***
+2022-03-30 11:23:24,083 - INFO -  *** Number of people : 3 ***
+2022-03-30 11:23:24,674 - INFO -  *** Number of people : 2 ***
+2022-03-30 11:23:43,679 - INFO -  *** Number of people : 1 ***
+2022-03-30 11:23:44,253 - INFO -  *** Number of people : 2 ***
+2022-03-30 11:23:57,017 - INFO -  *** Number of people : 3 ***
+2022-03-30 11:23:57,656 - INFO -  *** Number of people : 2 ***
+2022-03-30 11:23:59,416 - INFO -  *** Number of people : 1 ***
+2022-03-30 11:24:02,784 - INFO -  *** Number of people : 2 ***
+2022-03-30 11:24:07,469 - INFO -  *** Number of people : 1 ***
+2022-03-30 11:29:37,199 - INFO -  *** Number of people : 2 ***
+2022-03-30 11:45:46,644 - INFO -  *** Number of people : 1 ***
+2022-03-30 11:45:57,911 - INFO -  *** Number of people : 0 ***
+2022-03-30 11:46:03,641 - INFO -  *** Number of people : 0 ***
+2022-03-30 11:46:22,486 - INFO -  *** Number of people : 0 ***
+2022-03-30 11:46:23,024 - INFO -  *** Number of people : 1 ***
+2022-03-30 11:46:23,592 - INFO -  *** Number of people : 0 ***
+2022-03-30 11:46:50,650 - INFO -  *** Number of people : 0 ***
+2022-03-30 11:47:28,910 - INFO -  *** Number of people : 0 ***
+2022-03-30 11:49:55,386 - INFO -  *** Number of people : 1 ***
+2022-03-30 11:51:59,599 - INFO -  *** Number of people : 0 ***
+2022-03-30 11:55:47,474 - INFO -  *** Number of people : 1 ***
+2022-03-30 11:56:31,290 - INFO -  *** Number of people : 2 ***
+2022-03-30 11:56:32,630 - INFO -  *** Number of people : 1 ***
+2022-03-30 11:56:33,935 - INFO -  *** Number of people : 2 ***
+2022-03-30 11:56:36,321 - INFO -  *** Number of people : 1 ***
+2022-03-30 11:58:04,583 - INFO -  *** Number of people : 2 ***
+2022-03-30 11:58:21,252 - INFO -  *** Number of people : 1 ***
+2022-03-30 12:00:51,953 - INFO -  *** Number of people : 0 ***
+2022-03-30 12:04:03,101 - INFO -  *** Number of people : 1 ***
+2022-03-30 12:06:33,723 - INFO -  *** Number of people : 2 ***
+2022-03-30 12:08:28,867 - INFO -  *** Number of people : 3 ***
+2022-03-30 12:15:03,378 - INFO -  *** Number of people : 2 ***
+2022-03-30 12:15:33,290 - INFO -  *** Number of people : 1 ***
+2022-03-30 12:16:07,897 - INFO -  *** Number of people : 2 ***
+2022-03-30 12:16:09,119 - INFO -  *** Number of people : 1 ***
+2022-03-30 12:16:09,686 - INFO -  *** Number of people : 2 ***
+2022-03-30 12:16:09,821 - INFO -  *** Number of people : 3 ***
+2022-03-30 12:16:56,634 - INFO -  *** Number of people : 2 ***
+2022-03-30 12:17:07,577 - INFO -  *** Number of people : 1 ***
+2022-03-30 12:17:09,513 - INFO -  *** Number of people : 2 ***
+2022-03-30 12:17:10,060 - INFO -  *** Number of people : 1 ***
+2022-03-30 12:17:17,831 - INFO -  *** Number of people : 2 ***
+2022-03-30 12:17:31,665 - INFO -  *** Number of people : 1 ***
+2022-03-30 12:18:04,935 - INFO -  *** Number of people : 2 ***
+2022-03-30 12:18:51,213 - INFO -  *** Number of people : 1 ***
+2022-03-30 12:18:52,105 - INFO -  *** Number of people : 0 ***
+2022-03-30 12:20:51,227 - INFO -  *** Number of people : 1 ***
+2022-03-30 12:20:53,238 - INFO -  *** Number of people : 0 ***
+2022-03-30 12:20:53,785 - INFO -  *** Number of people : 1 ***
+2022-03-30 12:20:54,364 - INFO -  *** Number of people : 0 ***
+2022-03-30 12:20:54,534 - INFO -  *** Number of people : 0 ***
+2022-03-30 12:24:15,658 - INFO -  *** Number of people : 0 ***
+2022-03-30 12:25:45,955 - INFO -  *** Number of people : 0 ***
+2022-03-30 12:26:02,759 - INFO -  *** Number of people : 0 ***
+2022-03-30 12:28:09,117 - INFO -  *** Number of people : 0 ***
+2022-03-30 12:28:09,309 - INFO -  *** Number of people : 0 ***
+2022-03-30 12:28:09,994 - INFO -  *** Number of people : 1 ***
+2022-03-30 12:28:15,606 - INFO -  *** Number of people : 2 ***
+2022-03-30 12:29:03,185 - INFO -  *** Number of people : 3 ***
+2022-03-30 12:29:05,184 - INFO -  *** Number of people : 4 ***
+2022-03-30 12:29:41,483 - INFO -  *** Number of people : 3 ***
+2022-03-30 12:29:43,842 - INFO -  *** Number of people : 4 ***
+2022-03-30 12:29:47,303 - INFO -  *** Number of people : 3 ***
+2022-03-30 12:32:48,769 - INFO -  *** Number of people : 4 ***
+2022-03-30 12:33:44,582 - INFO -  *** Number of people : 3 ***
+2022-03-30 12:34:15,762 - INFO -  *** Number of people : 4 ***
+2022-03-30 12:50:16,243 - INFO -  *** Number of people : 5 ***
+2022-03-30 12:50:40,832 - INFO -  *** Number of people : 6 ***
+2022-03-30 12:50:49,945 - INFO -  *** Number of people : 5 ***
+2022-03-30 12:51:17,492 - INFO -  *** Number of people : 6 ***
+2022-03-30 12:51:44,740 - INFO -  *** Number of people : 5 ***
+2022-03-30 12:52:12,685 - INFO -  *** Number of people : 6 ***
+2022-03-30 13:04:17,609 - INFO -  *** Number of people : 5 ***
+2022-03-30 13:04:58,421 - INFO -  *** Number of people : 6 ***
+2022-03-30 13:09:32,811 - INFO -  *** Number of people : 5 ***
+2022-03-30 13:09:50,403 - INFO -  *** Number of people : 4 ***
+2022-03-30 13:10:33,230 - INFO -  *** Number of people : 5 ***
+2022-03-30 13:12:34,147 - INFO -  *** Number of people : 6 ***
+2022-03-30 13:14:39,080 - INFO -  *** Number of people : 7 ***
+2022-03-30 13:15:48,293 - INFO -  *** Number of people : 8 ***
+2022-03-30 13:18:10,959 - INFO -  *** Number of people : 7 ***
+2022-03-30 13:18:50,544 - INFO -  *** Number of people : 8 ***
+2022-03-30 13:18:51,246 - INFO -  *** Number of people : 9 ***
+2022-03-30 13:21:34,428 - INFO -  *** Number of people : 8 ***
+2022-03-30 13:21:39,737 - INFO -  *** Number of people : 9 ***
+2022-03-30 13:21:46,207 - INFO -  *** Number of people : 8 ***
+2022-03-30 13:22:10,469 - INFO -  *** Number of people : 9 ***
+2022-03-30 13:22:10,997 - INFO -  *** Number of people : 10 ***
+2022-03-30 13:24:34,769 - INFO -  *** Number of people : 9 ***
+2022-03-30 13:34:09,152 - INFO -  *** Number of people : 10 ***
+2022-03-30 13:35:45,797 - INFO -  *** Number of people : 9 ***
+2022-03-30 13:36:27,448 - INFO -  *** Number of people : 10 ***
+2022-03-30 13:43:47,195 - INFO -  *** Number of people : 9 ***
+2022-03-30 13:43:48,127 - INFO -  *** Number of people : 10 ***
+2022-03-30 13:43:49,753 - INFO -  *** Number of people : 9 ***
+2022-03-30 13:44:59,874 - INFO -  *** Number of people : 10 ***
+2022-03-30 13:46:17,420 - INFO -  *** Number of people : 9 ***
+2022-03-30 13:48:02,183 - INFO -  *** Number of people : 10 ***
+2022-03-30 13:48:15,391 - INFO -  *** Number of people : 9 ***
+2022-03-30 13:50:58,007 - INFO -  *** Number of people : 8 ***
+2022-03-30 13:50:59,259 - INFO -  *** Number of people : 9 ***
+2022-03-30 13:53:57,427 - INFO -  *** Number of people : 10 ***
+2022-03-30 13:54:57,505 - INFO -  *** Number of people : 11 ***
+2022-03-30 13:57:27,189 - INFO -  *** Number of people : 10 ***
+2022-03-30 13:58:21,257 - INFO -  *** Number of people : 11 ***
+2022-03-30 14:00:36,899 - INFO -  *** Number of people : 12 ***
+2022-03-30 14:00:38,909 - INFO -  *** Number of people : 13 ***
+2022-03-30 14:32:30,048 - INFO -  *** Number of people : 14 ***
+2022-03-30 14:34:43,423 - INFO -  *** Number of people : 13 ***
+2022-03-30 14:35:39,841 - INFO -  *** Number of people : 14 ***
+2022-03-30 14:49:09,934 - INFO -  *** Number of people : 13 ***
+2022-03-30 14:51:05,363 - INFO -  *** Number of people : 12 ***
+2022-03-30 14:52:21,915 - INFO -  *** Number of people : 13 ***
+2022-03-30 14:52:36,200 - INFO -  *** Number of people : 12 ***
+2022-03-30 14:52:37,077 - INFO -  *** Number of people : 13 ***
+2022-03-30 14:53:13,564 - INFO -  *** Number of people : 14 ***
+2022-03-30 14:59:15,764 - INFO -  *** Number of people : 15 ***
+2022-03-30 14:59:17,058 - INFO -  *** Number of people : 16 ***
+2022-03-30 15:03:13,706 - INFO -  *** Number of people : 15 ***
+2022-03-30 15:03:23,519 - INFO -  *** Number of people : 14 ***
+2022-03-30 15:03:25,678 - INFO -  *** Number of people : 15 ***
+2022-03-30 15:03:27,436 - INFO -  *** Number of people : 14 ***
+2022-03-30 15:03:43,657 - INFO -  *** Number of people : 15 ***
+2022-03-30 15:03:45,472 - INFO -  *** Number of people : 14 ***
+2022-03-30 15:04:56,058 - INFO -  *** Number of people : 13 ***
+2022-03-30 15:05:12,128 - INFO -  *** Number of people : 14 ***
+2022-03-30 15:12:55,782 - INFO -  *** Number of people : 15 ***
+2022-03-30 15:16:06,287 - INFO -  *** Number of people : 14 ***
+2022-03-30 15:18:44,901 - INFO -  *** Number of people : 15 ***
+2022-03-30 15:22:26,298 - INFO -  *** Number of people : 14 ***
+2022-03-30 15:24:53,764 - INFO -  *** Number of people : 15 ***
+2022-03-30 15:35:31,735 - INFO -  *** Number of people : 16 ***
+2022-03-30 15:35:33,786 - INFO -  *** Number of people : 15 ***
+2022-03-30 15:35:34,670 - INFO -  *** Number of people : 16 ***
+2022-03-30 15:45:33,119 - INFO -  *** Number of people : 17 ***
+2022-03-30 15:52:24,180 - INFO -  *** Number of people : 18 ***
+2022-03-30 15:56:57,831 - INFO -  *** Number of people : 17 ***
+2022-03-30 16:00:06,227 - INFO -  *** Number of people : 18 ***
+2022-03-30 16:01:16,588 - INFO -  *** Number of people : 17 ***
+2022-03-30 16:01:26,621 - INFO -  *** Number of people : 18 ***
+2022-03-30 16:04:35,561 - INFO -  *** Number of people : 17 ***
+2022-03-30 16:05:06,574 - INFO -  *** Number of people : 18 ***
+2022-03-30 16:07:46,635 - INFO -  *** Number of people : 17 ***
+2022-03-30 16:11:04,272 - INFO -  *** Number of people : 16 ***
+2022-03-30 16:13:13,204 - INFO -  *** Number of people : 17 ***
+2022-03-30 16:13:27,784 - INFO -  *** Number of people : 18 ***
+2022-03-30 16:15:13,936 - INFO -  *** Number of people : 17 ***
+2022-03-30 16:15:14,535 - INFO -  *** Number of people : 18 ***
+2022-03-30 16:16:25,820 - INFO -  *** Number of people : 17 ***
+2022-03-30 16:33:36,304 - INFO -  *** Number of people : 16 ***
+2022-03-30 16:35:31,158 - INFO -  *** Number of people : 17 ***
+2022-03-30 16:35:44,714 - INFO -  *** Number of people : 18 ***
+2022-03-30 16:59:55,054 - INFO -  *** Number of people : 17 ***
+2022-03-30 16:59:57,562 - INFO -  *** Number of people : 18 ***
+2022-03-30 17:00:18,511 - INFO -  *** Number of people : 19 ***
+2022-03-30 17:01:00,591 - INFO -  *** Number of people : 18 ***
+2022-03-30 17:01:50,742 - INFO -  *** Number of people : 19 ***
+2022-03-30 17:04:28,729 - INFO -  *** Number of people : 18 ***
+2022-03-30 17:06:15,082 - INFO -  *** Number of people : 19 ***
+2022-03-30 17:07:37,190 - INFO -  *** Number of people : 18 ***
+2022-03-30 17:09:13,960 - INFO -  *** Number of people : 17 ***
+2022-03-30 17:09:47,861 - INFO -  *** Number of people : 18 ***
+2022-03-30 17:09:47,989 - INFO -  *** Number of people : 19 ***
+2022-03-30 17:09:49,693 - INFO -  *** Number of people : 18 ***
+2022-03-30 17:09:58,293 - INFO -  *** Number of people : 17 ***
+2022-03-30 17:23:35,045 - INFO -  *** Number of people : 16 ***
+2022-03-30 17:23:49,626 - INFO -  *** Number of people : 15 ***
+2022-03-30 17:24:00,064 - INFO -  *** Number of people : 16 ***
+2022-03-30 17:24:52,396 - INFO -  *** Number of people : 17 ***
+2022-03-30 17:24:53,212 - INFO -  *** Number of people : 16 ***
+2022-03-30 17:24:53,702 - INFO -  *** Number of people : 17 ***
+2022-03-30 17:24:57,715 - INFO -  *** Number of people : 16 ***
+2022-03-30 17:24:59,874 - INFO -  *** Number of people : 15 ***
+2022-03-30 17:25:00,021 - INFO -  *** Number of people : 16 ***
+2022-03-30 17:25:00,773 - INFO -  *** Number of people : 15 ***
+2022-03-30 17:25:01,606 - INFO -  *** Number of people : 14 ***
+2022-03-30 17:25:02,432 - INFO -  *** Number of people : 13 ***
+2022-03-30 17:25:02,640 - INFO -  *** Number of people : 14 ***
+2022-03-30 17:25:12,242 - INFO -  *** Number of people : 13 ***
+2022-03-30 17:25:28,734 - INFO -  *** Number of people : 14 ***
+2022-03-30 17:27:34,538 - INFO -  *** Number of people : 13 ***
+2022-03-30 17:29:39,345 - INFO -  *** Number of people : 12 ***
+2022-03-30 17:29:39,597 - INFO -  *** Number of people : 11 ***
+2022-03-30 17:29:40,106 - INFO -  *** Number of people : 10 ***
+2022-03-30 17:29:40,678 - INFO -  *** Number of people : 11 ***
+2022-03-30 17:29:41,852 - INFO -  *** Number of people : 10 ***
+2022-03-30 17:29:43,279 - INFO -  *** Number of people : 11 ***
+2022-03-30 17:29:47,978 - INFO -  *** Number of people : 10 ***
+2022-03-30 17:29:48,513 - INFO -  *** Number of people : 11 ***
+2022-03-30 17:32:15,580 - INFO -  *** Number of people : 12 ***
+2022-03-30 17:32:16,061 - INFO -  *** Number of people : 11 ***
+2022-03-30 17:32:26,853 - INFO -  *** Number of people : 12 ***
+2022-03-30 17:33:22,153 - INFO -  *** Number of people : 11 ***
+2022-03-30 17:33:28,555 - INFO -  *** Number of people : 12 ***
+2022-03-30 17:36:51,171 - INFO -  *** Number of people : 11 ***
+2022-03-30 17:36:51,620 - INFO -  *** Number of people : 12 ***
+2022-03-30 17:36:55,348 - INFO -  *** Number of people : 13 ***
+2022-03-30 17:36:55,517 - INFO -  *** Number of people : 14 ***
+2022-03-30 17:38:43,510 - INFO -  *** Number of people : 15 ***
+2022-03-30 17:39:42,784 - INFO -  *** Number of people : 14 ***
+2022-03-30 17:39:47,821 - INFO -  *** Number of people : 15 ***
+2022-03-30 17:41:34,583 - INFO -  *** Number of people : 14 ***
+2022-03-30 17:41:45,276 - INFO -  *** Number of people : 15 ***
+2022-03-30 17:50:43,380 - INFO -  *** Number of people : 14 ***
+2022-03-30 17:50:49,933 - INFO -  *** Number of people : 13 ***
+2022-03-30 18:58:33,149 - INFO - New login username : admin ip : 172.16.32.109
+2022-03-30 20:46:47,199 - INFO - New login username : admin ip : 172.16.32.109
+2022-03-31 07:57:24,490 - INFO -  *** Number of people : 12 ***
+2022-03-31 07:57:39,743 - INFO -  *** Number of people : 13 ***
+2022-03-31 07:59:29,106 - INFO -  *** Number of people : 12 ***
+2022-03-31 08:54:41,799 - INFO -  *** Number of people : 13 ***
+2022-03-31 09:26:34,479 - INFO -  *** Number of people : 14 ***
+2022-03-31 09:40:20,457 - INFO -  *** Number of people : 13 ***
+2022-03-31 09:40:25,387 - INFO -  *** Number of people : 12 ***
+2022-03-31 09:40:50,541 - INFO -  *** Number of people : 13 ***
+2022-03-31 09:40:51,208 - INFO -  *** Number of people : 12 ***
+2022-03-31 09:40:53,071 - INFO -  *** Number of people : 11 ***
+2022-03-31 09:41:09,211 - INFO -  *** Number of people : 12 ***
+2022-03-31 09:42:04,390 - INFO -  *** Number of people : 11 ***
+2022-03-31 09:42:15,265 - INFO -  *** Number of people : 10 ***
+2022-03-31 09:42:15,766 - INFO -  *** Number of people : 11 ***
+2022-03-31 09:42:19,864 - INFO -  *** Number of people : 10 ***
+2022-03-31 09:42:20,345 - INFO -  *** Number of people : 11 ***
+2022-03-31 09:44:16,085 - INFO -  *** Number of people : 10 ***
+2022-03-31 10:07:51,780 - INFO -  *** Number of people : 9 ***
+2022-03-31 10:08:42,790 - INFO -  *** Number of people : 10 ***
+2022-03-31 11:45:06,045 - INFO -  *** Number of people : 9 ***
+2022-03-31 11:45:33,026 - INFO -  *** Number of people : 10 ***
+2022-03-31 12:53:36,065 - INFO -  *** Number of people : 9 ***
+2022-03-31 12:58:44,504 - INFO -  *** Number of people : 8 ***
+2022-03-31 12:58:48,186 - INFO -  *** Number of people : 7 ***
+2022-03-31 12:58:51,467 - INFO -  *** Number of people : 6 ***
+2022-03-31 12:58:53,090 - INFO -  *** Number of people : 5 ***
+2022-03-31 12:58:53,902 - INFO -  *** Number of people : 6 ***
+2022-03-31 12:59:27,386 - INFO -  *** Number of people : 5 ***
+2022-03-31 14:56:41,692 - INFO -  *** Number of people : 4 ***
+2022-03-31 14:56:43,165 - INFO -  *** Number of people : 5 ***
+2022-03-31 14:56:44,603 - INFO -  *** Number of people : 6 ***
+2022-03-31 14:56:48,244 - INFO -  *** Number of people : 7 ***
+2022-03-31 14:56:51,951 - INFO -  *** Number of people : 8 ***
+2022-03-31 15:09:06,792 - INFO -  *** Number of people : 9 ***
+2022-03-31 15:09:07,450 - INFO -  *** Number of people : 8 ***
+2022-03-31 15:09:25,524 - INFO -  *** Number of people : 7 ***
+2022-03-31 15:09:55,026 - INFO -  *** Number of people : 6 ***
+2022-03-31 15:14:01,386 - INFO -  *** Number of people : 5 ***
+2022-03-31 15:14:11,115 - INFO -  *** Number of people : 4 ***
+2022-03-31 15:15:12,282 - INFO -  *** Number of people : 3 ***
+2022-03-31 15:18:06,021 - INFO -  *** Number of people : 4 ***
+2022-03-31 15:21:07,042 - INFO -  *** Number of people : 3 ***
+2022-03-31 15:21:08,639 - INFO -  *** Number of people : 2 ***
+2022-03-31 15:21:30,844 - INFO -  *** Number of people : 1 ***
+2022-03-31 15:21:38,199 - INFO -  *** Number of people : 0 ***
+2022-04-01 14:42:57,179 - INFO -  *** Number of people : 0 ***
+2022-04-01 14:42:57,657 - INFO -  *** Number of people : 0 ***
+2022-04-01 14:42:58,504 - INFO -  *** Number of people : 0 ***
+2022-04-01 14:54:38,734 - INFO -  *** Number of people : 0 ***
+2022-04-01 14:56:36,025 - INFO -  *** Number of people : 1 ***
+2022-04-01 14:58:41,089 - INFO - New login username : elo ip : 172.16.32.107
+2022-04-01 14:59:16,367 - INFO -  *** Number of people : 2 ***
+2022-04-01 15:43:32,471 - INFO -  *** Number of people : 1 ***
+2022-04-01 15:43:33,343 - INFO -  *** Number of people : 2 ***
+2022-04-01 16:27:48,986 - INFO -  *** Number of people : 1 ***
+2022-04-01 16:27:49,493 - INFO -  *** Number of people : 2 ***
+2022-04-01 16:33:23,431 - INFO -  *** Number of people : 1 ***
+2022-04-01 16:33:23,980 - INFO -  *** Number of people : 2 ***
+2022-04-01 16:35:26,087 - INFO -  *** Number of people : 1 ***
+2022-04-01 16:35:26,765 - INFO -  *** Number of people : 2 ***
+2022-04-01 17:06:56,674 - INFO -  *** Number of people : 1 ***
+2022-04-01 17:06:57,484 - INFO -  *** Number of people : 2 ***
+2022-04-01 17:11:46,778 - INFO -  *** Number of people : 3 ***
+2022-04-01 17:12:10,622 - INFO -  *** Number of people : 4 ***
+2022-04-01 17:31:07,519 - INFO -  *** Number of people : 5 ***
+2022-04-01 17:38:16,988 - INFO - New login username : admin ip : 172.16.32.107
+2022-04-01 17:51:52,858 - INFO -  *** Number of people : 6 ***
+2022-04-01 17:51:53,343 - INFO -  *** Number of people : 7 ***
+2022-04-01 17:54:36,827 - INFO -  *** Number of people : 6 ***
+2022-04-01 17:55:07,656 - INFO -  *** Number of people : 7 ***
+2022-04-01 17:55:08,122 - INFO -  *** Number of people : 8 ***
+2022-04-01 17:56:34,968 - INFO -  *** Number of people : 7 ***
+2022-04-01 17:56:59,155 - INFO -  *** Number of people : 8 ***
+2022-04-02 11:21:25,802 - INFO - New login username : elo ip : 172.16.32.109
+2022-04-02 12:10:05,110 - INFO - New login username : admin ip : 172.16.32.109
+2022-04-02 16:09:42,700 - INFO - New login username : elo ip : 172.16.32.109
+2022-04-02 16:09:59,547 - INFO - New login username : admin ip : 172.16.32.109
+2022-04-03 13:55:39,580 - INFO - New login username : elo ip : 172.16.32.109

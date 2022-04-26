@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="black">
+
+    <meta name="author" content="Robin Forestier">
+    <meta name="description" content="Login2 - ">
+
+    <title>Login 2</title>
+    <link rel="stylesheet" href="../static/login2.css/">
+    <link rel="icon" type="image/x-icon" href="/static/img/LogoElo.ico">
+    <link rel="shortcut icon" href="/static/img/LogoElo.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Create the header -->
+    <div class="header">
+        <p><a href="/page1">Retour</a></p>
+        <p> {{ time }}  </p>
+		<p class="warning"> {{ warning }}  </p>
+        <h1>Login</h1>
+    </div>
+
+    <div class="log">
+        <!-- Title -->
+        <h2>Mot de passe</h2>
+
+        <!-- Create the password -->
+        <div class="mdp">
+            <p>
+                {% if mdp|length == 0 %}
+                    <!-- Password is ampty -->
+                    {{ " ° ° ° " }}
+                {% endif %}
+                {% for m in mdp %}
+                    <!-- Show the number of characters by * -->
+                    {{ "*" }}
+                {% endfor %}
+            </p>
+        </div>
+
+        <!-- Create the keyboard -->
+        <form method="post">
+            <div class="clavier">
+                <button type="submit" class="btn" name="btn" value="1"> <span class="btn_num">1</span> </button>
+                <button type="submit" class="btn" name="btn" value="2"> <span class="btn_num">2</span> </button>
+                <button type="submit" class="btn" name="btn" value="3"> <span class="btn_num">3</span> </button>
+                <button type="submit" class="btn" name="btn" value="4"> <span class="btn_num">4</span> </button>
+                <button type="submit" class="btn" name="btn" value="5"> <span class="btn_num">5</span> </button>
+                <button type="submit" class="btn" name="btn" value="6"> <span class="btn_num">6</span> </button>
+                <button type="submit" class="btn" name="btn" value="7"> <span class="btn_num">7</span> </button>
+                <button type="submit" class="btn" name="btn" value="8"> <span class="btn_num">8</span> </button>
+                <button type="submit" class="btn" name="btn" value="9"> <span class="btn_num">9</span> </button>
+                <button type="submit" class="btn" name="btn" value="10"> <span class="btn_num">Effacer</span> </button>
+                <button type="submit" class="btn" name="btn" value="0"> <span class="btn_num">0</span> </button>
+                <button type="submit" class="btn" name="btn" value="11"> <span class="btn_num">Submit</span> </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

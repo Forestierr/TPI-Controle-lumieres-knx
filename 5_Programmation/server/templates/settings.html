@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="refresh" content="60">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="black">
+
+    <meta name="author" content="Robin Forestier">
+    <meta name="description" content="Page 1 - controle des lumières en knx">
+
+    <title>Light Control</title>
+    <link rel="icon" type="image/x-icon" href="/static/img/LogoElo.ico">
+    <link rel="shortcut icon" href="/static/img/LogoElo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/settings.css/">
+</head>
+<body>
+    <!-- create the header -->
+    <div class="header">
+        <p><a href="/page1">Retour</a></p>
+        <p> {{ time }} </p>
+		<p class="warning"> {{ warning }} </p>
+        <h1>Settings</h1>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <!-- show the error message -->
+            <div class="error">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% endwith %}
+    </div>
+
+    <!--Table 1-->
+    <form method="post">
+        <!--Title-->
+        <h2>Sélection des heures </h2>
+        <table class="table_1">
+            <!-- header -->
+            <tr>
+                <th id="hour"></th>
+                <th>Lundi</th>
+                <th>Mardi</th>
+                <th>Mercredi</th>
+                <th>Jeudi</th>
+                <th>Vendredi</th>
+                <th>Samedi</th>
+                <th>Dimanche</th>
+            </tr>
+
+            {% for tab in table %}
+            {% set iterration = loop.index0 %}
+                <tr>
+                    <!-- hour -->
+                    <td>{{ heure[iterration] }}</td>
+                    <!-- row of btn -->
+                    {% for t in tab %}
+                        <td id="n{{ t }}"> <button type="submit" name="btn_tbl_1" value="{{ iterration }}.{{ loop.index0 }}"> &#8203; </button> </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    </form>
+
+    <hr>
+
+    <!-- Table 2 -->
+    <form method="post">
+        <!-- Title -->
+        <h2>Sélection des lumières </h2>
+        <table class="table_1">
+            <!-- header -->
+            <tr>
+                <th id="hour"></th>
+                <th>Lundi</th>
+                <th>Mardi</th>
+                <th>Mercredi</th>
+                <th>Jeudi</th>
+                <th>Vendredi</th>
+                <th>Samedi</th>
+                <th>Dimanche</th>
+            </tr>
+
+            {% for tab in table2 %}
+            {% set iterration = loop.index0 %}
+                <tr>
+                    <!-- hour -->
+                    <td>{{ name_t2[iterration] }}</td>
+                    <!-- row of btn -->
+                    {% for t in tab %}
+                        <td id="n{{ t }}"> <button type="submit" name="btn_tbl_2" value="{{ iterration }}.{{ loop.index0 }}"> &#8203; </button> </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    </form>
+
+    <hr>
+
+    <!-- add a custom hour -->
+    <div class="sett">
+        <!-- title -->
+        <h2>Ajouter une nouvelle heure</h2>
+        <form method="post">
+            <input type="time" id="time" name="time" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <!-- del a custom hour -->
+    <div class="sett">
+         <!-- title -->
+        <h2>Supprimer une heure</h2>
+        <form method="post">
+            <select name="supp">
+                 <!-- basic value but disable -->
+                <option value="" disabled selected>-- Supprimer une heure --</option>
+
+                {% if new_heure %}
+                    <!-- custom hour -->
+                    {% for new in new_heure %}
+                        <option value={{ new }}>{{ new }}</option>
+                    {% else %}
+
+                    {% endfor %}
+                {% endif %}
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <hr>
+
+     <!-- Manual mode -->
+    <div class="sett">
+         <!-- title -->
+        <h2>Mode manuel</h2>
+        <form method="post">
+             <!-- Slide button, differ on class -->
+            <button type="submit" name="manuel" class="c{{ mode_manuel }}" value={{ mode_manuel }}></button>
+        </form>
+        <p>Le mode manuel désactive les caméras tant qu'il est activé ou jusqu'à minuit.</p>
+    </div>
+
+    <hr>
+
+     <!-- Hour manual -->
+    <div class="sett">
+         <!-- title -->
+        <h2>Date et heur manuel</h2>
+        <form method="post">
+
+            {% if mode_heure_manuel == 0 %}
+                {% set var = "required" %}
+            {% else %}
+                {% set var = "" %}
+            {% endif %}
+
+            <input type="datetime-local" id="heure_manuel" name="heure_manuel" {{ var }}>
+            <button type="submit" name="heure_manuel_btn" class="c{{ mode_heure_manuel }}" value={{ mode_heure_manuel }}></button>
+        </form>
+        <p>Le mode date et heure manuelle est activé jusqu'à minuit.</p>
+    </div>
+
+    <hr>
+
+     <!-- Camera infos -->
+    <div class="sett">
+        <h2>Caméras</h2>
+
+        {% for cam in cam_conn %}
+            {% if cam[1] != "" %}
+                {% if cam[0] == True %}
+                    {% set var = "Online" %}
+                {% else %}
+                    {% set var = "Offline" %}
+                {% endif %}
+
+                <p>Caméra {{ loop.index }} : <span class={{ var }}> {{ var }} </span> IP : {{ cam[1] }}
+                    {% if cam[3] != 0 %}
+                        <span>Température: </span> <span style="color:#f33"> {{ cam[3] }} </span>
+                    {% endif %}
+                </p>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <hr>
+
+     <!-- Modification of password -->
+    <div class="modif_pass">
+        <h2> Modifier mot de passe </h2>
+        <form method="post">
+            <div class="select">
+                <select name="modif_mdp" required>
+                    <option value="" disabled selected>-- Modifier mot de passe --</option>
+                    <option value="elo">elo</option>
+                    <option value="admin">admin</option>
+                    <option value="local">local</option>
+                </select>
+            </div>
+
+            <div class="password">
+                <input type="password" name="password" required>
+                <label>Password</label>
+            </div>
+
+            <div class="password">
+                <input type="password" name="new_password" required>
+                <label>New password</label>
+            </div>
+
+            <button class="btn" type="submit"> Submit </button>
+        </form>
+    </div>
+
+     <!-- Use for css only -->
+    <div class="space" style="visibility:hidden">.</div>
+
+</body>
+</html>
